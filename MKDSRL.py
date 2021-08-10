@@ -1,6 +1,6 @@
-'''
+"""
 Code for solving Mario Kart DS Figure 8 Circuit (uses DeSmuMe Nintendo DS Emulator)
-Control Hotkeys:
+Control keys:
 X: accelerate
 Q: Item
 Right arrow key: Turn right
@@ -20,9 +20,9 @@ Uses one pixel of bottom screen to determine speed and direction (reward)
 Bottom screen pixel made by custom Lua Script file that runs in tandem to this code
 (more details on Lua Script in the Lua Script file)
 One race is one episode (uses more reference pixels to determine when finished)
-'''
+"""
 from tensorflow.keras.layers import Dense, Input, Flatten, Conv3D, MaxPool3D
-from pynput.keyboard import Key, Controller, Events
+from pynput.keyboard import Key, Controller
 from PIL import ImageGrab
 from tensorflow.keras.models import Model
 import time
@@ -42,7 +42,7 @@ def get_screen():  # Retrieves screenshot of DS box
     return screen
 
 
-def is_equal(lis, lis2): #For RGB Value determination
+def is_equal(lis, lis2):  # For RGB Value determination
     i = len(lis2)
     if lis[0] == lis2[0]:
         for l in range(i - 1):
@@ -185,17 +185,11 @@ class DQN():
         else:
             print("-------------DQN------------")
         if load: #Can load in weight file to continue training
-            if self.ddqn:
-                try:
-                    self.target_q_model.load_weights('ddqn_MKDS.h5')
-                    self.q_model.load_weights('ddqn_MKDS.h5')
-                except FileNotFoundError:
-                    print("There isn't a file to be loaded")
-                try:
-                    self.target_q_model.load_weights('ddqn_MKDS.h5')
-                    self.q_model.load_weights('ddqn_MKDS.h5')
-                except FileNotFoundError:
-                    print("There isn't a file to be loaded")
+            try: 
+                self.target_q_model.load_weights(self.weights_file)
+                self.q_model.load_weights(self.weights_file)
+            except FileNotFoundError:
+                print("There isn't a file to be loaded")
     def build_model(self, n_outputs): #  Network architecture
         inputs = Input(shape=(5, 84, 140, 3), name='state')
         conv = Conv3D(64, (2, 4, 4), activation='relu')(inputs)
@@ -380,7 +374,7 @@ for episode in range(episode_count):  # Main training loop
     item_lis = list(item_lis)
     agent.remember(item_lis[-1][0], item_lis[-1][1], item_lis[-1][2], item_lis[-1][3], True)
     race_length.append(len(agent.memory) - sum(race_length))
-    if episode > 9: #Only remembering last ten races to help with speed of training
+    if episode > 9: #Only remembering last ten races to help with speed of training. Better or worse resources may change this value. 
         agent.forget(race_length[0])
         race_length.pop(0)
     print(len(agent.memory))
@@ -408,6 +402,5 @@ plt.plot(episodes, scores)
 plt.xlabel('Episode')
 plt.ylabel('Score')
 plt.show()
-#Saving weights
+#Saving weights of completed training
 agent.save_weights()
-
