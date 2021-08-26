@@ -8,6 +8,12 @@ It performs fairly well, being able to get to the final lap around 25% of the ti
 
 training still needs to be fully completed, which is something I plan to finish before 2022
 
+# Jump to:
+[Prerequiste programs][required-programs-and-links-to-get-them]
+[How to make it work][how-to-get-it-working]
+[How it works][how-it-works]
+[Sample Results][expected-results]
+
 # Required Programs and Links to Get Them
 - DesMuMe  (http://desmume.org/download/): The Nintendo DS Emulator I used for this project.
 - ROM file for Mario Kart DS (https://www.romsgames.net/nintendo-ds-rom-mario-kart-ds/): The file that I used to get the game on the emulator
