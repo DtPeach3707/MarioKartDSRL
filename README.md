@@ -9,13 +9,13 @@ It performs fairly well, being able to get to the final lap around 25% of the ti
 training still needs to be fully completed, which is something I plan to finish before 2022
 
 # Jump to:
-[Prerequiste programs][#required-programs-and-links-to-get-them]
+[Prerequiste programs](#required-programs-and-links-to-get-them)
 
-[How to make it work][#how-to-get-it-working]
+[How to make it work](#how-to-get-it-working)
 
-[How it works][#how-it-works]
+[How it works](#how-it-works)
 
-[Sample Results][#expected-results]
+[Sample Results](#expected-results)
 
 # Required Programs and Links to Get Them
 - DesMuMe  (http://desmume.org/download/): The Nintendo DS Emulator I used for this project.
