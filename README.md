@@ -37,6 +37,7 @@ training still needs to be fully completed, which is something I plan to finish 
 
 # Expected Results
 The training video shown was at episode 804, where it went to the final lap. This does show its progress, as trackwise, by the 600th/700th episode (out of 2000) your bot should be consistently clearing the first lap before it gets DNFed. It takes it a while to learn how to do it, but don’t fret!. It does eventually learn.
-<img src = "https://user-images.githubusercontent.com/69704069/131050694-a46afcff-55b7-444f-a485-84027d09646b.jpg" width="100">
-<img src = "https://user-images.githubusercontent.com/69704069/131050668-c4883fe4-ae39-4655-9df4-3bf5057989de.jpg" width="100">
+
+<img src = "https://user-images.githubusercontent.com/69704069/131050694-a46afcff-55b7-444f-a485-84027d09646b.jpg" width="200">
+<img src = "https://user-images.githubusercontent.com/69704069/131050668-c4883fe4-ae39-4655-9df4-3bf5057989de.jpg" width="200">
 
