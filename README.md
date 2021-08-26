@@ -10,8 +10,11 @@ training still needs to be fully completed, which is something I plan to finish 
 
 # Jump to:
 [Prerequiste programs][required-programs-and-links-to-get-them]
+
 [How to make it work][how-to-get-it-working]
+
 [How it works][how-it-works]
+
 [Sample Results][expected-results]
 
 # Required Programs and Links to Get Them
