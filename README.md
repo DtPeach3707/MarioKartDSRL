@@ -21,7 +21,7 @@ Training still needs to be fully completed, which is something I plan to finish 
 
 # Required Programs and Links to Get Them
 - DesMuMe  (http://desmume.org/download/): The Nintendo DS Emulator I used for this project.
-- ROM file for Mario Kart DS (https://www.romsgames.net/nintendo-ds-rom-mario-kart-ds/): The file that I used to get the game on the emulator
+- A ROM file for Mario Kart DS
 - Lua 51.dll compiler (https://sourceforge.net/projects/luabinaries/files/5.1.5/Tools%20Executables/lua-5.1.5_Win64_bin.zip/download): How you get lua script working on DesMuMe, as it needs a compiler.  
 
 # How to get it Working
