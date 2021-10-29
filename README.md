@@ -6,7 +6,7 @@ It uses a DDQN Network, gets image inputs by taking a screenshot of the approxim
 
 It performs fairly well, being able to get to the final lap around 25% of the time by the 800th episode (out of 2000)
 
-Training still needs to be fully completed, which is something I plan to finish before 2022
+Training still needs to be fully completed, but from the scores in the 800th episode, it seems that it will perform well
 
 # Jump to:
 [Prerequiste programs](#required-programs-and-links-to-get-them)
